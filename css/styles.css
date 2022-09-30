@@ -10,6 +10,7 @@
   --footer-backgrd-color: #2f303a;
   --team-backgrd-color: #f5f4fa;
   --main-sprite-color: #AFB1B8;
+  --portfolio-border: #EEEEEE;
 }
 /* Скидання стилів */
 p,
@@ -89,7 +90,7 @@ body {
   color: var(--main-font-color);
 }
 .current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-link:hover {
   color: var(--accent-color);
@@ -343,13 +344,14 @@ img {
 /* -----Підвал----- */
 
 .logo-footer {
-  display: block;
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
   align-items: baseline;
+  
 }
 .logo-footer-part {
   color: var(--btn-accent-color);
@@ -449,9 +451,9 @@ footer {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;
-border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid var(--portfolio-border);
+border-right: 1px solid var(--portfolio-border);
+border-bottom: 1px solid var(--portfolio-border);
 }
 .portfolio-item {
   margin-right: 30px;
@@ -531,6 +533,7 @@ margin-right: 0;
 }
 
 .footer-soc-title {
+  font-size: 14px;
      color: var(--btn-accent-color);
 }
 .footer-soc-link {
