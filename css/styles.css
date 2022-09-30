@@ -342,16 +342,22 @@ img {
 }
 
 /* -----Підвал----- */
-
-.logo-footer {
+.footer-container {
   display: flex;
-  font-family: "Raleway", sans-serif;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  }
+.logo-footer {
+    font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  align-items: baseline;
-  
+    
 }
 .logo-footer-part {
   color: var(--btn-accent-color);
@@ -391,6 +397,40 @@ footer {
 .footer-tel:focus {
   color: var(--accent-color);
 }
+.footer-soc {
+  margin-left: 70px;
+}
+.footer-soc-title {
+  font-size: 14px;
+     color: var(--btn-accent-color);
+}
+.footer-soc-link {
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btn-accent-color);
+}
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+}
+.footer-soc-icon {
+  fill: currentColor;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--btn-accent-color);
+}
+
 /* -----Друга сторінка----- */
 .main-section {
   background-color: var(--header-main-color);
@@ -532,33 +572,3 @@ margin-right: 0;
   fill: var(--accent-color);
 }
 
-.footer-soc-title {
-  font-size: 14px;
-     color: var(--btn-accent-color);
-}
-.footer-soc-link {
-  margin-top: 20px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--btn-accent-color);
-}
-.footer-soc-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  
-}
-.footer-soc-icon {
-  fill: currentColor;
-}
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--btn-accent-color);
-}
