@@ -377,6 +377,52 @@ img {
 .contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
+/* --- Наші клієнти --- */
+.clients-section {
+  background-color: var(--header-main-color);
+}
+.clients-nav {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--main-font-color);
+}
+.clients-item-list {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-item {
+   background-color: var(--header-main-color);
+}
+.clients-link {
+  border: 1px solid var(--main-sprite-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px; 
+  background-color: var(--header-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-sprite-color);
+}
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover, 
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 
 footer {
   padding-top: 60px;
@@ -527,49 +573,5 @@ margin-right: 0;
   line-height: 1.88;
   color: var(--contacts-color);
 }
-/* --- Наші клієнти --- */
-.clients-section {
-  background-color: var(--header-main-color);
-}
-.clients-nav {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--main-font-color);
-}
-.clients-item-list {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.clients-item {
-   background-color: var(--header-main-color);
-}
-.clients-link {
-  border: 1px solid var(--main-sprite-color);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px; 
-  background-color: var(--header-main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--main-sprite-color);
-}
 
-.clients-link:hover, 
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-}
-.clients-link:hover .clients-icon:hover, 
-.clients-link:focus .clients-icon:focus {
-  fill: var(--accent-color);
-}
 
